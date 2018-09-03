@@ -91,8 +91,8 @@ module Zold
         http.request_put(
           path, body,
           headers.merge(
-            'Content-Type': 'text/plain',
-            'Content-Length': body.length.to_s
+            'Content-Type' => 'text/plain',
+            'Content-Length' => body.length.to_s
           )
         )
       end
